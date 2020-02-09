@@ -1,0 +1,24 @@
+<!doctype html>
+<title>Hello from Spurious</title>
+<html>
+  <body>
+    <header>
+      {% extends "layout.html" %}
+      {% block content %}
+  
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+
+<div class="home">
+    <h1 style="color: white">This is specially made for you</h1>
+    <p>This website was built with Python via the Flask framework.</p>
+    <input type="text" class="SearchTextBox" style="font-size:14px"></input><br><br>
+    <button class="button"> Search </button>
+  </div>
+{% endblock %}
+  
+</body>
+</html>
